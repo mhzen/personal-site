@@ -5,10 +5,9 @@
 }
 
 body {
-    --accent: #3c91e6;
-    --primary: #342e37;
-    --secondary: #a2d729;
-    --text: #ddd;
+    --accent: #89DCEB;
+    --primary: #161320;
+    --text: #D9E0EE;
     background: var(--primary);
     color: var(--text);
     padding: 10% 15% 15% 15%;
