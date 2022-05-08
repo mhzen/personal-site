@@ -5,16 +5,16 @@
 }
 
 body {
-    --accent: #89DCEB;
-    --primary: #161320;
-    --text: #D9E0EE;
+    --accent: #59C2FF;
+    --primary: #0D1017;
+    --text: #BFBDB6;
     background: var(--primary);
     color: var(--text);
-    padding: 10% 15% 15% 15%;
+    padding: 15% 15% 15% 15%;
 }
 
 .text {
-    padding: 10% 15% 15% 15%;
+    padding: 15% 15% 15% 15%;
 }
 
 .img {
