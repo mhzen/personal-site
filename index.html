@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="favicon.ico">
+        <title>wrfzzzzzzz</title>
+        <link rel="canonical" href="https://seapunk.xyz/">
+        <link id="stylesheet" rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="background-image"></div>
+        <div id="main">
+            <img src="pfp.webp" id="pfp">
+            <h1>Warofzen</h1>
+            <p>A simple man making his way through the internet.</p>
+            <p>You can find me at:</p>
+            <ul>
+                <li><a href="mailto:warofzen1@proton.me">warofzen1@proton.me</a></li>
+                <li>warofzen#4900</li>
+                <li><a href="https://twitter.com/warofzen">@warofzen</a></li>
+            </ul>
+            <p id="time"></p>
+            <script>
+                const time = new Date().toLocaleTimeString('en-US', {
+                        timeZone: 'Asia/Jakarta',
+                    hour12: false,
+                    hour: 'numeric',
+                    minute: 'numeric'
+                });
+                document.getElementById('time').innerHTML = `It is currently ${time} here.`;
+            </script>
+            <p>might add more stuff here later idk</p>
+        </div>
+    </body>
+</html>
