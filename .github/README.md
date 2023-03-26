@@ -1,3 +1,3 @@
 # [warofzen.github.io](https://warofzen.github.io)
 
-where i (will) post stuff [hopefully]
+where i (will) post stuff

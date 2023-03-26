@@ -1,0 +1,46 @@
+baseURL: https://warofzen.github.io/
+languageCode: en-us
+title: "hhhhhhh"
+theme: "PaperMod"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  defaultTheme: auto
+  profileMode:
+    enabled: true
+    title: Hamm
+    subtitle: "idk what am i even doing honestly"
+    imageUrl: "https://pbs.twimg.com/media/FYOL9NNWAAAEGB5?format=png"
+    imageTitle: "yes"
+  # homeInfoParams:
+    # Title: Hamm
+    # Content: "a boy is a gun"
+  socialIcons:
+    - name: "Discord"
+      url: "https://discord.com/users/713687221244264468"
+    - name: "GitHub"
+      url: "https://github.com/warofzen/"
+    - name: "Twitter"
+      url: "https://twitter.com/warofzen/"
+    - name: "Email"
+      url: "mailto:warofzen1@proton.me"
+  ShowReadingTime: true
+  ShowToc: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+
+menu:
+  main:
+    - identifier: archive(s)
+      name: archives
+      url: /archives/
+      weight: 10
+    - identifier: search
+      name: search
+      url: /search/
+      weight: 20
