@@ -1,0 +1,57 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.3.0/web/hack.min.css);
+
+html {
+    font-family: 'Hack', sans-serif;
+}
+
+body {
+    --accent: #18BAC9;
+    --primary: #1F2232;
+    --secondary: #494B6E;
+    --text: #D8F7FD;
+    background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    color: var(--text);
+    padding: 2% 5% 2% 2%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+::selection {
+    background: var(--accent);
+    color: var(--primary);
+}
+
+a {
+    color: var(--accent);
+}
+
+h1, h3 {
+    animation-name: colors;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+#main {
+    border: var(--secondary);
+    border-style: solid;
+    padding: 10px;
+    display: inline-block;
+    background: var(--primary)
+}
+
+#pfp {
+    height: auto;
+    max-width: 20%;
+}
