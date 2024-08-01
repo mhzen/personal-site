@@ -1,6 +1,6 @@
-baseURL = "https://risotto.joeroe.io"
+baseURL = "https://warofzen.is-a.dev"
 theme = "risotto"
-title = "Warofzen"
+title = "Hamm's site"
 author = "Warofzen"
 copyright = "© some rights reserved"
 paginate = 3
@@ -44,13 +44,25 @@ icon = "fa-brands fa-discord"
 title = "Discord"
 url = "https://discord.com/users/713687221244264468"
 
-# [menu]
-#
-#   [[menu.main]]
-#     identifier = "post"
-#     name = "Posts"
-#     url = "/post/"
-#     weight = 10
+[menu]
+
+  # [[menu.about]]
+  #   identifier = "about"
+  #   name = "about"
+  #   url = "/"
+  #   weight = 100
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "contact"
+    url = "/contact"
+    weight = 90
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "blog"
+    url = "/blog/"
+    weight = 80
 
 [taxonomies]
 category = "categories"
