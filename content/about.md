@@ -1,22 +1,27 @@
----
-title: "About"
-ShowToc: false
-ShowReadingTime: false
-editPost:
-  URL: ""
-  Text: "hey" # edit text
-  appendFilePath: false # to append file path to Edit link
----
++++
+ShowReadingTime = false
+ShowToc = false
+title = 'About'
+
+[editPost]
+  Text = 'hey'
+  URL = ''
+  appendFilePath = false
++++
 
 ![pfp](/pfp.jpg)
 
-# Hello World!
+# About
+Hi, I’m Hammam, known online as warofzen.
 
-I’m Hammam. I go by warofzen mostly online. Im a student who likes computers.
+I’m a student based in Indonesia, interested in programming and tinkering with hardwares. When I’m not working on a project, I enjoy diving into music, movies, and books. Feel free to check out my last.fm or Letterboxd to see what I’m currently into.
 
-My interests include programming, networking, and tinkering with computer hardware. Beside that i also really love [listening to music](https://www.last.fm/user/wrham) and i also play games sometimes.
+I’m a big believer in simplicity and minimalism, this website is one example. Oh, and Gruvbox? It’s everywhere in my setup. Send help.
 
-This website is supposed to be my 'home' in the internet.
+# This site
+Think of this site as my digital home, a place where I might share thoughts, ideas, or whatever random things come to mind.
+
+I’m planning to write some blog posts here… eventually. Let’s be honest, though—I’ll probably forget all about it. But hey, you never know, surprises happen!
 
 # Contact Me!
 
