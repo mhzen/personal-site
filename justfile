@@ -1,5 +1,5 @@
 run:
-  hugo serve -D
+  zola serve
 
 add:
   git add .
