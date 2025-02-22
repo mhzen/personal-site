@@ -14,17 +14,17 @@
 ```
 {% end %}
 
-# Hello world!
-Hi, I’m Hammam, known online as warofzen.
+Hello there, I’m Hammam—mhzen online.
 
-I'm a student based in Indonesia with a big interest in technology. Some tech stuffs i like:
-- Linux, <span class="spoiler">~i use Fedora btw~</span>
-- Languages: Go, Rust, JavaScript, Shell Script, C#
-- Nix
-- Docker/Podman
-- Selfhosting
-- FOSS
+A student from Indonesia, into tech. Here’s the rundown:
 
-Outside of tech, I unwind with music, movies, and videogames—check out my <a href="https://www.last.fm/user/wrham" target="_blank">last.fm</a>!
+- Linux enthusiast (<span class="spoiler">I do not use arch, btw</span>)
+- Languages i speak: Go, Rust, JavaScript, Shell Script, C#
+- Nix enjoyer
+- Docker/Podman tinkerer
+- Self-hosting because why not
+- FOSS supporter, obviously
 
-I plan to write some blog post in the future.
+When I’m not knee-deep in arcane programming runes, it’s music, movies, or games. Stalk my listening habits [here](https://www.last.fm/user/wrham).
+
+Might throw some blog posts into the void eventually.
