@@ -23,6 +23,7 @@ This blog is my digital shed — expect some notes, rants, or maybe (mostly) jus
 
 ## Find me elsewhere
 - 👾 [GitHub](https://github.com/mhzen/)
+- 🐘 <a rel="me" href="https://mstdn.social/@mhzen">Mastodon</a>
 - 🎶 [Last.fm](https://www.last.fm/user/wrham) ; <span id="song">&#8987;</span>
 - 📧 [mhzen42@proton.me](mailto:mhzen42@proton.me)
 
