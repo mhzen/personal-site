@@ -12,14 +12,20 @@
 {% end %}
 </center>
 
-👋 I'm Muhammad — student-ish by day, tinkerer by day too (i sleep at night :P). I break things to understand them, and sometimes even fix them. Some of my interest include:
-- software (FOSS especially)
-- hardware (all hail right-to-repair)
-- linux systems
-- selfhosting
-- and stuff related to above
+Hello World! welcome to my small digital shed.
 
-This blog is my digital shed — expect some notes, rants, or maybe (mostly) just cobwebs.
+My name is Muhammad, i usually go by mhzen on the net. I'm currently studying Electronics & Instrumentation, though i always liked the software side of things too, especially FOSS/Linux world.
+
+Other stuff i'm into:
+- Hardware _"hacking"_ (mostly i just broke them tho lol)
+- Selfhosting
+- video gaems: Minecraft, Aoe2DE, and others.
+- Cycling
+- Nasi padang
+- Water (absolutely superior beverage)
+- King Gizzard & The Lizard Wizard
+
+That's it for now, maybe visit my [blog](./blog) or maybe not. Thanks for visiting anyway, have a good day!
 
 ## Find me elsewhere
 - 👾 [GitHub](https://github.com/mhzen/)
