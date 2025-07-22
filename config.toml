@@ -22,6 +22,9 @@ fix_contrast = true
 issues_url = "https://github.com/mhzen/personal-site/issues"
 source_url = "https://github.com/mhzen/personal-site"
 show_copy_button = true
+scripts = [
+  "oneko.js"
+]
 
 [extra.footer]
 show_copyright = true
@@ -38,6 +41,7 @@ socials = [
 [extra.nav]
 show_feed = true
 links = [
-  { url = "@/blog/_index.md", name = "Blog" },
-  { url = "@/projects.md", name = "Projects" },
+  { url = "./blog", name = "Blog" },
+  { url = "./uses", name = "Uses" },
+  { url = "./projects", name = "Projects" },
 ]
