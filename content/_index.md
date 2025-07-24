@@ -12,20 +12,23 @@
 {% end %}
 </center>
 
-Hello World! welcome to my small digital shed.
+Hello, world!
+Welcome to my little digital shed.
 
-My name is Muhammad, i usually go by mhzen on the net. I'm currently studying Electronics & Instrumentation, though i always liked the software side of things too, especially FOSS/Linux world.
+I’m Muhammad, online I usually go by mhzen.
+I'm an Electronics & Instrumentation student, but I also enjoy software, especially the FOSS/Linux world.
 
-Other stuff i'm into:
-- Hardware _"hacking"_ (mostly i just broke them tho lol)
-- Selfhosting
-- video gaems: Minecraft, Aoe2DE, and others.
+Things I’m into:
+
+- Hardware tinkering (and breaking)
+- Self‑hosting
+- Games: Minecraft, AoE2:DE, etc.
 - Cycling
-- Nasi padang
-- Water (absolutely superior beverage)
+- Nasi Padang
+- Water (best drink)
 - King Gizzard & The Lizard Wizard
 
-That's it for now, maybe visit my [blog](./blog) or maybe not. Thanks for visiting anyway, have a good day!
+That’s it. Maybe check out my [blog](./blog). Thanks for stopping by!
 
 ## Find me elsewhere
 - 👾 [GitHub](https://github.com/mhzen/)
