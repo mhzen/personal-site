@@ -15,18 +15,10 @@
 Hello, world!
 Welcome to my little digital shed.
 
-I’m Muhammad, online I usually go by mhzen.
-I'm an Electronics & Instrumentation student, but I also enjoy software, especially the FOSS/Linux world.
-
-Things I’m into:
-
-- Hardware tinkering (and breaking)
-- Self‑hosting
-- Games: Minecraft, AoE2:DE, etc.
-- Cycling
-- Nasi Padang
-- Water (best drink)
-- King Gizzard & The Lizard Wizard
+I’m Hammam, online I usually go by mhzen. I'm just a tech nerd having fun and learning along the way!
+I'm into programming and messing around with Linux. (Fedora btw)
+I like tinkering with hardware and selfhosting stuff at home.
+When I'm not doing that, I'm probably playing some Factorio or modded Minecraft.
 
 That’s it. Maybe check out my [blog](./blog). Thanks for stopping by!
 

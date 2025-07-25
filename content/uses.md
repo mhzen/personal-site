@@ -2,7 +2,7 @@
 title = "Projects"
 +++
 
-These are stuff that i [use](https://uses.tech/), you might or might not find some interesting stuff here :)
+These are stuff that i [use](https://uses.tech/), you might find some interesting stuff here idk
 
 # Hardware
 
