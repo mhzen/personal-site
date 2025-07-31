@@ -5,5 +5,5 @@ fetch(url)
   .then(function (response) {
       return response.json()
   }).then(function (json) {
-      song.innerHTML = 'playing ' + json['track']['name'] + ' by ' + json['track']['artist']['#text'];
+      song.innerHTML = '🎧 playing ' + json['track']['name'] + ' by ' + json['track']['artist']['#text'];
   });
