@@ -13,14 +13,10 @@
 </center>
 
 ## Hello There
-I’m Hammam. A student from Indonesia.
-
-Things I do:
-- Take electronics apart (and sometimes put them back together)  
-- Tinker with hardware and repair old devices (_reduce, repair, recycle!_) 
-- Write code for automation, data processing, and small tools using shell and python 
-- Self‑hosting services and managing personal infrastructure
-- Learning about embedded systems and (slowly) contributing to open source projects
-- Play around with retro-computing and digital archiving
+I’m Hammam.
+- An Electronics and Instrumentation student at Universitas Gadjah Mada
+- Enjoying programming, self-hosting, and tinkering with hardware and electronics.
+- Interested in embedded systems and IoT.
+- In my free time I like to read, wrte, and play video games.
 
 This site is where I share projects, notes, and experiments.  
