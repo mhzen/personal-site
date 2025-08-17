@@ -14,9 +14,9 @@
 
 ## Hello There
 I’m Hammam.
-- An Electronics and Instrumentation student at Universitas Gadjah Mada
+- Electronics and Instrumentation student at Universitas Gadjah Mada
 - Enjoying programming, self-hosting, and tinkering with hardware and electronics.
 - Interested in embedded systems and IoT.
-- In my free time I like to read, wrte, and play video games.
+- In my free time I like to read, write, and play video games.
 
 This site is where I share projects, notes, and experiments.  

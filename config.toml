@@ -25,6 +25,9 @@ show_copy_button = true
 scripts = [
   "oneko.js"
 ]
+styles = [
+  "mhzen.css"
+]
 
 [extra.footer]
 show_copyright = true
