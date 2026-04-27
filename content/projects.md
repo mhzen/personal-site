@@ -1,5 +1,4 @@
 +++
 title = "Projects"
+template = "projects.html"
 +++
-
-Check my github for now aha

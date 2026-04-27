@@ -1,0 +1,23 @@
+- repo: mhzen/bottles-photoshop
+  tags: [Linux]
+  description: "A bottle configuration for running Adobe Photoshop on Linux."
+
+- repo: mhzen/biru
+  tags: [Docker, Linux]
+  description: "Immutable linux distro based on Project Bluefin."
+
+- repo: mhzen/brainfuk
+  tags: [Python]
+  description: "A simple Brainfuck interpreter written in Python."
+
+- repo: mhzen/minesweeper
+  tags: [C++]
+  description: "A CLI Minesweeper clone built from scratch in C++."
+
+- repo: mhzen/personal-site
+  tags: [Zola, JavaScript]
+  description: "The source code for this personal website."
+
+- repo: mhzen/dotfiles
+  tags: [Linux, Nix]
+  description: "My personal Linux dotfiles and system configurations."

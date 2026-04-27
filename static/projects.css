@@ -1,0 +1,114 @@
+/* static/projects.css */
+.projects-container {
+    max-width: var(--max-width, 1000px);
+    margin: 0 auto;
+    padding: 1rem 0 2rem 0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: linear-gradient(135deg, color-mix(in srgb, var(--glass-bg, #2a2a2a) 60%, transparent), color-mix(in srgb, var(--glass-bg, #2a2a2a) 20%, transparent));
+    border-radius: var(--rounded-corner, 12px);
+    padding: 1.5rem;
+    position: relative;
+    border: 1px solid var(--fg-muted-2, #333);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-raised, 0 10px 20px rgba(0,0,0,0.2));
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.project-title {
+    margin: 0;
+    font-size: 1.4rem;
+    color: var(--fg-color, #fff);
+    font-weight: 700;
+    font-family: var(--font-neo-grotesque, sans-serif);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.project-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.tag {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    border-radius: 1rem;
+    background: color-mix(in srgb, var(--fg-muted-2, #555) 40%, transparent);
+    color: var(--fg-muted-5, #ccc);
+    white-space: nowrap;
+}
+
+.project-desc {
+    margin: 0 0 1.5rem 0;
+    font-size: 0.95rem;
+    color: var(--fg-muted-5, #aaa);
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.project-links {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.btn-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 1rem;
+    border-radius: var(--rounded-corner, 8px);
+    background: color-mix(in srgb, var(--fg-color, #fff) 5%, transparent);
+    color: var(--fg-muted-5, #ccc);
+    border: 1px solid var(--fg-muted-2, #444);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    z-index: 2;
+}
+
+.btn-link:hover {
+    background: color-mix(in srgb, var(--fg-color, #fff) 10%, transparent);
+    color: var(--fg-color, #fff);
+}
+
+.btn-link svg {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
