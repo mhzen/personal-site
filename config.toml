@@ -19,6 +19,7 @@ smart_punctuation = true
 # default_theme = "light"
 accent_color = "#A6B37D"
 fix_contrast = true
+card = false
 issues_url = "https://github.com/mhzen/personal-site/issues"
 source_url = "https://github.com/mhzen/personal-site"
 show_copy_button = true
