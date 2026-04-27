@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ get_url(path='home.css') }}">
+<script src="{{ get_url(path='home.js') }}" defer></script>
+
+<div class="home-grid">
+  <!-- ABOUT SECTION -->
+  <div class="home-card home-card-about">
+    <div class="avatar-wrapper">
+      <img src="https://avatars.githubusercontent.com/u/88493761?v=4" alt="Hammam">
+    </div>
+    <div class="about-content">
+      <h1>Hey, I'm Hammam</h1>
+      <p>
+        Electronics and Instrumentation student at Universitas Gadjah Mada.<br>
+        Enjoying programming, self-hosting, and tinkering with hardware.
+      </p>
+      <div class="about-actions">
+        <a href="{{ get_url(path='projects') }}" class="btn-primary">Portfolio</a>
+        <a href="#sidebar" class="btn-secondary">About</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- LATEST POST SECTION -->
+  {% set blog = get_section(path="blog/_index.md") %}
+  {% set latest_post = blog.pages | first %}
+  {% if latest_post %}
+  <a href="{{ latest_post.permalink }}" class="home-card home-card-post">
+    <div class="card-badge">
+      <svg viewBox="0 0 24 24">
+        <path
+          d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+      </svg>
+      LATEST POST
+    </div>
+    <h2>{{ latest_post.title }}</h2>
+    <p>{{ latest_post.description | default(value=latest_post.summary | default(value="Check out my latest thoughts and
+      updates.") | striptags | truncate(length=80)) }}</p>
+    <div class="post-date">{{ latest_post.date | date(format="%d %b %Y") }}</div>
+
+    <!-- If we had an image, it could go here. For now we use a gradient placeholder to balance the grid -->
+    <div
+      style="flex-grow: 1; min-height: 80px; margin-top: 1rem; border-radius: var(--rounded-corner-small); background: linear-gradient(to top right, var(--glass-bg), transparent); border: 1px solid var(--fg-muted-1);">
+    </div>
+  </a>
+  {% else %}
+  <div class="home-card home-card-post">
+    <div class="card-badge">LATEST POST</div>
+    <h2>No Posts Yet</h2>
+    <p>Check back later for updates!</p>
+  </div>
+  {% endif %}
+
+  <!-- LAST PLAYED SECTION -->
+  <a href="https://www.last.fm/user/wrham" target="_blank" rel="noopener noreferrer" class="home-card home-card-lastfm"
+    style="text-decoration: none; color: inherit;">
+    <img id="lastfm-bg" class="lastfm-bg" src="" style="display: none;" alt="Album Cover">
+    <div class="card-badge">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" />
+      </svg>
+      LAST PLAYED
+    </div>
+    <h3 id="lastfm-song">Loading...</h3>
+    <p id="lastfm-artist">-</p>
+  </a>
+
+  <!-- WEATHER & TIME SECTION -->
+  <div class="home-card home-card-weather">
+    <div class="weather-left">
+      <div class="card-badge">
+        <svg viewBox="0 0 24 24">
+          <path
+            d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+        </svg>
+        YOGYAKARTA, INDONESIA
+      </div>
+      <div class="weather-time" id="weather-time">-- : --</div>
+      <div class="weather-greeting" id="weather-greeting">Hello</div>
+      <div class="weather-utc">UTC+7</div>
+    </div>
+    <div class="weather-right">
+      <div class="weather-temp">
+        <span id="weather-icon"></span>
+        <span id="weather-temp-val">--</span>
+      </div>
+      <div class="weather-desc" id="weather-desc">Loading weather</div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

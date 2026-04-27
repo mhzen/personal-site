@@ -1,0 +1,288 @@
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.home-card {
+  background: var(--bg-color); /* use main bg color for base, duckquill has very dark colors */
+  background: linear-gradient(135deg, color-mix(in srgb, var(--glass-bg) 60%, transparent), color-mix(in srgb, var(--glass-bg) 20%, transparent));
+  border-radius: var(--rounded-corner);
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--fg-muted-2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  backdrop-filter: blur(10px);
+}
+
+.home-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-raised);
+}
+
+.home-card-about {
+  grid-column: 1 / 8;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.avatar-wrapper {
+  flex-shrink: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: var(--shadow-glow);
+  background: var(--bg-color);
+}
+
+.avatar-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+.avatar-wrapper img:hover {
+  position: static !important;
+  transform: none !important;
+  box-shadow: none !important;
+  z-index: 0 !important;
+  border-radius: 0 !important;
+}
+
+.about-content h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  color: var(--accent-color);
+  font-weight: bold;
+  font-family: var(--font-neo-grotesque), sans-serif;
+}
+
+.about-content p {
+  margin: 0 0 1.2rem 0;
+  color: var(--fg-muted-5);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.about-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.about-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: color-mix(in srgb, var(--accent-color) 30%, transparent);
+  color: var(--fg-color);
+  border: 1px solid color-mix(in srgb, var(--accent-color) 50%, transparent);
+}
+
+.btn-primary:hover {
+  background: color-mix(in srgb, var(--accent-color) 50%, transparent);
+}
+
+.btn-secondary {
+  background: color-mix(in srgb, var(--fg-color) 5%, transparent);
+  color: var(--fg-color);
+  border: 1px solid var(--fg-muted-2);
+}
+
+.btn-secondary:hover {
+  background: color-mix(in srgb, var(--fg-color) 10%, transparent);
+}
+
+.home-card-post {
+  grid-column: 8 / 13;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--fg-muted-5);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.card-badge svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.home-card-post h2 {
+  margin: 0 0 0.2rem 0;
+  font-size: 1.3rem;
+  color: var(--fg-color);
+  font-family: var(--font-neo-grotesque), sans-serif;
+}
+
+.home-card-post p {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: var(--fg-muted-5);
+  line-height: 1.4;
+  flex-grow: 1;
+}
+
+.post-date {
+  font-size: 0.8rem;
+  color: var(--fg-muted-4);
+}
+
+.home-card-lastfm {
+  grid-column: 1 / 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  min-height: 120px;
+}
+
+.lastfm-bg {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+  z-index: -1 !important;
+  mask-image: linear-gradient(to right, transparent, black);
+  -webkit-mask-image: linear-gradient(to right, transparent, black);
+  border-radius: var(--rounded-corner) !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+.lastfm-bg:hover,
+.home-card-lastfm:hover .lastfm-bg {
+  position: absolute !important;
+  transform: none !important;
+  box-shadow: none !important;
+  z-index: -1 !important;
+  border-radius: var(--rounded-corner) !important;
+}
+
+.home-card-lastfm .card-badge {
+  color: var(--accent-color);
+}
+
+.home-card-lastfm h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--fg-color);
+  z-index: 2;
+  font-family: var(--font-neo-grotesque), sans-serif;
+}
+
+.home-card-lastfm p {
+  margin: 0.2rem 0 0 0;
+  font-size: 0.9rem;
+  color: var(--fg-muted-5);
+  z-index: 2;
+}
+
+.home-card-weather {
+  grid-column: 6 / 13;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weather-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-time {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.2rem 0;
+  color: var(--fg-color);
+  font-variant-numeric: tabular-nums;
+}
+
+.weather-greeting {
+  font-size: 0.9rem;
+  color: var(--fg-muted-5);
+  font-style: italic;
+}
+
+.weather-utc {
+  font-size: 0.8rem;
+  color: var(--fg-muted-4);
+  margin-top: 0.2rem;
+}
+
+.weather-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.weather-temp {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--fg-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.weather-temp svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.weather-desc {
+  font-size: 0.9rem;
+  color: var(--fg-muted-5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .home-card-about, .home-card-post, .home-card-lastfm, .home-card-weather {
+    grid-column: 1 / -1;
+  }
+  
+  .home-card-about {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .about-actions {
+    justify-content: center;
+  }
+}
